@@ -9,7 +9,7 @@ interface ArticleCardProps {
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ article, onReadMore }) => {
   return (
-    <article className="bg-brand-secondary rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+    <article className="bg-brand-secondary rounded-lg shadow-xl overflow-hidden transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 ease-in-out">
       <img src={article.imageUrl} alt={article.title} className="w-full h-56 object-cover" />
       <div className="p-6">
         <div className="flex flex-wrap gap-2 mb-2">

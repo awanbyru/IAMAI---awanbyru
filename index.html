@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IAMAI - awanbyru</title>
-    <meta name="description" content="A modern web blog focused on AI and prompting, featuring premium AI image collections, prompt guides, and fostering a positive community between readers and the author." />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-primary': '#0D1B2A',
-                        'brand-secondary': '#1B263B',
-                        'brand-accent': '#415A77',
-                        'brand-light': '#778DA9',
-                        'brand-text': '#E0E1DD',
-                        'brand-cyan': '#00F5D4',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                },
-            },
-        };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Run This Next.js Project</title>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0D1B2A; /* brand-primary to avoid flash of white */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #0D1B2A;
+            color: #E0E1DD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            padding: 2rem 3rem;
+            border: 1px solid #415A77;
+            border-radius: 8px;
+            background-color: #1B263B;
+            max-width: 600px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #fff;
+            border-bottom: 2px solid #00F5D4;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background-color: #0D1B2A;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00F5D4;
+        }
+        .steps {
+            text-align: left;
+            display: inline-block;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .steps li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: #00F5D4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 <script type="importmap">
@@ -40,14 +64,28 @@
   "imports": {
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "next/": "https://aistudiocdn.com/next@^15.5.4/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "next/": "https://aistudiocdn.com/next@^15.5.4/"
   }
 }
 </script>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <div class="container">
+        <h1>IAMAI - awanbyru Project</h1>
+        <p>This is a Next.js application. To view the website, you must run it using the development server.</p>
+        <p>Opening this HTML file directly in the browser will not work.</p>
+        
+        <div class="steps">
+            <strong>Follow these steps:</strong>
+            <ol>
+                <li>Open your terminal or command prompt.</li>
+                <li>Run <code>npm install</code> to install dependencies.</li>
+                <li>Run <code>npm run dev</code> to start the server.</li>
+            </ol>
+        </div>
+
+        <p>After starting the server, open your web browser and go to:</p>
+        <p><a href="http://localhost:3000" target="_blank">http://localhost:3000</a></p>
+    </div>
 </body>
 </html>

@@ -1,1 +1,1 @@
-// The content of this file has been migrated to pages/index.tsx. This file can be safely deleted.
+// This file is intentionally left blank. It is a remnant from a previous setup and is not needed for the Next.js application.

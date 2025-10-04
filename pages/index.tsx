@@ -77,7 +77,7 @@ const HomePage: React.FC = () => {
       <Head>
         <title>IAMAI - awanbyru</title>
         <meta name="description" content="A modern web blog focused on AI and prompting, featuring premium AI image collections, prompt guides, and fostering a positive community between readers and the author." />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen flex flex-col bg-brand-primary text-brand-text">
         <Header />
